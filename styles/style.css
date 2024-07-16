@@ -216,6 +216,34 @@ nav >ul li{
     gap:100px;
     margin-bottom: 100px;
 }
+/* sponsor section */
+.our-sponsor{
+    text-align: center;
+}
+.our-sponsor h3{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.our-sponsor p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sponsors{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.sponsors img{
+    filter:grayscale(100%)
+}
 /* responsive */
 @media screen and (max-width:576px){
     nav{
@@ -276,5 +304,13 @@ nav >ul li{
         align-items: center;
         gap:50px;
         row-gap:0px;
+    }
+    /* sponsors */
+    .sponsors{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 }
